@@ -3,7 +3,7 @@ userChrome.css customization to move Firefox's (and forks) Proton UI tabs below 
 
 **PSA: This works well on GNOME, macOS and Windows 11. It's largely untested on other platforms / within other desktop environments.**
 
-![grafik](https://github.com/user-attachments/assets/1690925a-82f0-4cde-b574-48dabffbafa3)
+![2024-08-12_Screenshot-userChrome css](https://github.com/user-attachments/assets/136a6895-d5b3-43d7-aae7-09037eb7a5e7)
 
 ## Customization
 
