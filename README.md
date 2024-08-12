@@ -1,5 +1,7 @@
 # firefox-tabs-below-navbar
-userChrome.css customization to put Firefox's (and forks) Proton UI tabs below the navigation bar
+userChrome.css customization to move Firefox's (and forks) Proton UI tabs below the navigation bar and the tab close button to the left. 
+
+**PSA: This works well on GNOME, macOS and Windows 11. It's largely untested on other platforms / within other desktop environments.**
 
 ![grafik](https://github.com/user-attachments/assets/1690925a-82f0-4cde-b574-48dabffbafa3)
 
