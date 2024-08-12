@@ -1,0 +1,122 @@
+:root:not([uidensity="compact"]) {
+	--tab-min-height: 32px !important;
+	--urlbar-icon-padding: 6px !important;
+}
+
+:not([lwtheme="true"]) #TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
+	box-shadow: 0 0 4px rgba(128,128,142,0.5) !important;
+}
+
+#nav-bar {
+    order: -1;
+    padding-inline-start: 140px !important;
+}
+
+/*
+#nav-bar-customization-target {
+    padding-block-start: 1px !important;
+}
+*/
+
+#TabsToolbar-customization-target {
+    padding-block-start: 1px !important;
+}
+
+.tab-background:is([selected], [multiselected]) {
+    box-shadow: none !important;
+}
+
+/*
+#PanelUI-menu-button {
+    margin-block-start: 1px !important;
+}
+*/
+
+.titlebar-buttonbox-container {
+    height: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.titlebar-spacer {
+    width: 0 !important;
+}
+
+#urlbar-input {
+    text-align: center !important;
+}
+
+.tab-background {
+	position: relative;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	display: none !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background::before {
+	content: '';
+	height: 4px;
+	width: 4px;
+	border-radius: 2px;
+	background-color: var(--identity-icon-color);
+	top: 4px;
+	right: 4px;
+	display: inline-block;
+	position: absolute;
+}
+
+.tab-label {
+	margin-block: 0 !important;
+}
+
+
+:not([uidensity="compact"]) .tab-label {
+	margin-block: 0 !important;
+}
+:not([uidensity="compact"]) #urlbar-container {
+	--urlbar-container-height: 38px !important;
+}
+
+:not([uidensity="compact"]) #urlbar {
+	--urlbar-toolbar-height: 38px !important;
+	--urlbar-height: 30px !important;
+	--urlbar-min-height: 30px !important;
+}
+#translate-notification-icon {
+  height: var(--urlbar-height) !important;
+  width: var(--urlbar-height) !important;
+}
+
+/* hides the native tabs */
+/*
+#TabsToolbar {
+	visibility: collapse;
+}
+*/
+
+/**
+ * Tab close button on the left
+ * from: https://support.mozilla.org/en-US/questions/1413698
+ */
+.tabbrowser-tab .tab-close-button {
+   opacity: 0;
+   margin-left: -4.5px !important;
+   margin-right: 2px !important;
+ }
+ .tabbrowser-tab:not(:hover) .tab-close-button {
+   display:none;
+ }
+ .tabbrowser-tab:not([pinned]):hover .tab-close-button {
+   opacity: 1;
+   margin-inline-end: 0;
+   order:-1 !important;
+   display:unset !important;
+ }
+  .tabbrowser-tab:not([pinned]):hover .tab-icon-stack {
+   -moz-box-ordinal-group: 99999 !important;
+ }
+ .tabbrowser-tab:not([pinned]):hover .tab-icon-stack:not([indicator-replaces-favicon]) {
+   display: none;
+ }
